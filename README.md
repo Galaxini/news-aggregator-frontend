@@ -1,46 +1,33 @@
-News Aggregator React.js Frontend
-Welcome to the News Aggregator React.js Frontend repository. This frontend portion of the project is responsible for providing the user interface for browsing and interacting with news articles.
+# News Aggregator React Frontend
 
-Getting Started
-These instructions will guide you through setting up and running the React.js frontend project locally for development and testing.
+**Welcome** to the **News Aggregator React Frontend** repository. This frontend portion of the project is responsible for the user interface and interactions for the News Aggregator web application.
 
-Prerequisites
+## Getting Started
+
+These instructions will guide you through setting up and running the React frontend project locally for development and testing using Docker. Please ensure you have Docker and Docker Compose installed on your development machine.
+
+### Prerequisites
+
 Before you begin, make sure you have the following prerequisites installed on your development machine:
 
-Node.js and npm: Install Node.js
-Installation
-Follow these steps to get the React.js frontend up and running:
+- **Docker**: [Install Docker](https://docs.docker.com/get-docker/)
+- **Docker Compose**: [Install Docker Compose](https://docs.docker.com/compose/install/)
 
-Clone the repository to your local machine:
+### Installation
 
-bash
-Copy code
-git clone <repository_url>
-Navigate to the project directory:
+Follow these steps to set up and run the React frontend using Docker:
 
-bash
-Copy code
-cd news-aggregator-frontend
-Install project dependencies:
+1. **Clone the repository to your local machine:**
 
-bash
-Copy code
-npm install
-Start the development server:
+   ```bash
+   git clone https://github.com/Galaxini/news-aggregator-backend.git
+2. **Navigate to the project directory:**
 
-bash
-Copy code
-npm start
-The React.js application should now be accessible at http://localhost:3000.
+   ```bash
+   cd news-aggregator-backend
+3. **Create a .env file based on the provided .env.example and configure your database settings.**
+4. **Build and start the Docker containers:**
 
-Usage
-[Provide instructions on how to use and interact with the React.js frontend. Explain key features and functionality.]
-
-Running Tests
-[If applicable, describe how to run tests for the React.js frontend.]
-
-Deployment
-[If applicable, provide instructions for deploying the React.js frontend in a production environment.]
-
-Built With
-React - The JavaScript library used for building the user interface
+   ```bash
+   docker-compose up --build
+5. **The Laravel application should now be accessible at http://localhost:8000.**
